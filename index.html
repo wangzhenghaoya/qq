@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+       .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+       .section-title {
+            padding: 15px;
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            color: white;
+            font-size: 18px;
+            transition: transform 0.3s, rotate 0.3s;
+        }
+
+       .section-title:hover {
+            transform: translateX(10px) rotate(3deg);
+        }
+
+       .icon {
+            margin-right: 8px;
+            color: #4b6cb7;
+            width: 20px;
+            text-align: center;
+            transition: transform 0.3s, rotate 0.3s;
+        }
+
+       .icon:hover {
+            transform: translateX(5px) rotate(10deg);
+        }
+
+       .photo {
+            width: 180px;
+            height: 220px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+       .info-item {
+            padding: 12px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+       .evaluation {
+            min-height: 100px;
+            padding: 12px 20px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            padding: 15px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+       .select-wrapper {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+        <h1>个人简历</h1>
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-2/3">
+                <div class="flex flex-wrap">
+                    <div class="info-item w-full md:w-1/3">
+                        <span class="icon"><i class="fas fa-user"></i></span>姓名：王政皓
+                    </div>
+                    <div class="info-item w-full md:w-1/3">
+                        <span class="icon"><i class="fas fa-venus-mars"></i></span>
+                        <div class="select-wrapper">
+                            <select>
+                                <option value="男">男</option>
+                                <option value="女">女</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item w-full md:w-1/3">
+                        <span class="icon"><i class="fas fa-birthday-cake"></i></span>年龄：19
+                    </div>
+                    <div class="info-item w-full md:w-1/3">
+                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>籍贯：山东省日照市
+                    </div>
+                    <div class="info-item w-full md:w-1/3">
+                        <span class="icon"><i class="fas fa-phone"></i></span>联系电话：18865687350
+                    </div>
+                    <div class="info-item w-full md:w-1/3">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>QQ：2506896167
+                    </div>
+                    <div class="info-item w-full md:w-1/3">
+                        <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                        <div class="select-wrapper">
+                            <select>
+                                <option value="小学">小学</option>
+                                <option value="中学">中学</option>
+                                <option value="专科">专科</option>
+                                <option value="本科">本科</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item w-full md:w-1/3">
+                        <span class="icon"><i class="fas fa-heartbeat"></i></span>
+                        <div class="select-wrapper">
+                            <select>
+                                <option value="健康">健康</option>
+                                <option value="不健康">不健康</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="info-item w-full md:w-1/3">
+                        <span class="icon"><i class="fas fa-ring"></i></span>
+                        <div class="select-wrapper">
+                            <select>
+                                <option value="已婚">已婚</option>
+                                <option value="未婚">未婚</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 p-4 flex justify-center">
+                <img src="11.jpg" class="photo">
+            </div>
+        </div>
+        <div class="section-title">
+            <span class="icon"><i class="fas fa-briefcase"></i></span>求职意向
+        </div>
+        <div class="info-item">
+            <div class="select-wrapper">
+                <select>
+                    <option value="工程师">软件工程师</option>
+                    <option value="设计师">软件设计师</option>
+                    <option value="分析师">软件分析师</option>
+                </select>
+            </div>
+        </div>
+        <div class="section-title">
+            <span class="icon"><i class="fas fa-book"></i></span>专业
+        </div>
+        <div class="info-item">
+            <div class="select-wrapper">
+                <select>
+                    <option value="软件工程">软件工程</option>
+                    <option value="其他">其他</option>
+                </select>
+            </div>
+        </div>
+        <div class="section-title">
+            <span class="icon"><i class="fas fa-university"></i></span>毕业学校
+        </div>
+        <div class="info-item">
+            <div class="select-wrapper">
+                <select>
+                    <option value="鲁东大学">鲁东大学</option>
+                    <option value="其他">其他</option>
+                </select>
+            </div>
+        </div>
+        <div class="section-title">
+            <span class="icon"><i class="fas fa-certificate"></i></span>技能证书
+        </div>
+        <div class="info-item">计算机二级证书、英语四级证书</div>
+        <div class="section-title">
+            <span class="icon"><i class="fas fa-heart"></i></span>个人特长与爱好
+        </div>
+        <div class="info-item">编程、篮球、阅读技术书籍</div>
+        <div class="section-title">
+            <span class="icon"><i class="fas fa-project-diagram"></i></span>项目经历
+        </div>
+        <div class="info-item">
+            <p><strong>校园在线学习平台项目</strong></p>
+            <p><em>项目描述</em>：开发一个基于 Web 的在线学习平台，学生可在线学习课程、提交作业，教师能发布课程和批改作业。</p>
+            <p><em>担任角色</em>：参与后端开发，负责部分接口的设计与实现，使用 Java 和 Spring Boot 框架。</p>
+            <p><em>项目成果</em>：成功上线平台，提高了学校教学的信息化水平。</p>
+        </div>
+        <div class="section-title">
+            <span class="icon"><i class="fas fa-comment-alt"></i></span>自我评价
+        </div>
+        <div class="evaluation">本人性格热情开朗，待人友好，为人诚实谦虚。工作勤奋，认真负责，能吃苦耐劳，尽职尽责，有耐心。具有亲和力，平易近人，善于与人沟通。学习刻苦认真，成绩优秀，名列前茅。品学兼优。
+积极主动、独立性强、具有高度的责任感和敬业精神，待人真诚、诚实守信、团结协作意识强，能够吃苦耐劳，勇于挑战新事物，具有一定的开拓创新能力，“踏实做事，诚实做人”是我为人处世的原则。积极参加课外文体活动，各种社会实践活动和工作等，以增加自己的阅历，提高自己的能力。</div>
+    </div>
+</body>
+
+</html>
+    
